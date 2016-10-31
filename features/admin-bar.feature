@@ -2,7 +2,7 @@ Feature: Admin bar
 
   Scenario: Showing the Homepage
 
-    When I am on "/"
+    When I am on "/twentyseventeen/"
     Then I should see "Welcome to the VCCW"
     And I should see "Welcome to the VCCW" in the "h1.site-title" element
 

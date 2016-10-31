@@ -3,3 +3,4 @@ node_modules/
 vendor/
 composer.phar
 npm-debug.log
+wp-cli-nightly.phar
