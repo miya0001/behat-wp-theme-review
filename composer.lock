@@ -1608,12 +1608,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vccw-team/wordpress-extension.git",
-                "reference": "d8e3a9a3f9d4faa34df2833e1c47c11a41623b49"
+                "reference": "239ac614b87fee78663f68093a46e1e1e5593cfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/d8e3a9a3f9d4faa34df2833e1c47c11a41623b49",
-                "reference": "d8e3a9a3f9d4faa34df2833e1c47c11a41623b49",
+                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/239ac614b87fee78663f68093a46e1e1e5593cfc",
+                "reference": "239ac614b87fee78663f68093a46e1e1e5593cfc",
                 "shasum": ""
             },
             "require": {
@@ -1627,7 +1627,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "VCCW\\Mink\\WordPressExtension\\": "src/"
+                    "VCCW\\Behat\\Mink\\WordPressExtension\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1641,7 +1641,7 @@
                 }
             ],
             "description": "WordPress extension for the Behat",
-            "time": "2016-10-31 09:38:34"
+            "time": "2016-11-01 03:56:16"
         }
     ],
     "packages-dev": [],
