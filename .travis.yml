@@ -3,6 +3,7 @@ language: php
 php:
 - '7.0'
 - '5.6'
+- '5.3'
 
 env:
   global:
@@ -12,8 +13,8 @@ env:
 before_install:
   - composer install
   - mysql -e "create database IF NOT EXISTS wordpress;" -uroot
-  - bash init/install-wp.sh
-  - ./wp-cli-nightly.phar server --host=0.0.0.0 --port=$WP_PORT --docroot=$WP_PATH --path=$WP_PATH  >/dev/null 2>&1 &
+  - bash init/install-wp.sh > /dev/null 2>&1
+  - ./wp-cli-nightly.phar server --host=0.0.0.0 --port=$WP_PORT --docroot=$WP_PATH --path=$WP_PATH >/dev/null 2>&1 &
   - npm install
   - npm start
 
