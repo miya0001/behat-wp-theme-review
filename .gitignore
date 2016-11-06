@@ -1,7 +1,6 @@
-bin/
-node_modules/
-vendor/
 composer.phar
+node_modules/
 npm-debug.log
 screenshots/*.png
+vendor/
 wp-cli-nightly.phar
