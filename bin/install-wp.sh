@@ -21,7 +21,7 @@ chmod 755 ./wp-cli-nightly.phar
 
 if [ ! $WP_VERSION ]; then
   WP_VERSION=latest
-if
+fi
 
 ./wp-cli-nightly.phar core download --path=$WP_PATH --locale=en_US --version=$WP_VERSION --force
 
@@ -56,5 +56,5 @@ PHP
 ./wp-cli-nightly.phar import bin/theme-unit-test-data.xml --authors=create --path=$WP_PATH > /dev/null 2>&1
 
 if [ $WP_THEME ]; then
-  ./wp-cli-nightly.phar theme install $WP_THEME --activate --path=$WP_PATH
+  ./wp-cli-nightly.phar theme install $WP_THEME --activate --path=$WP_PATH --force
 fi
