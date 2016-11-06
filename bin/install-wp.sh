@@ -49,7 +49,7 @@ PHP
 ./wp-cli-nightly.phar user create editor editor@example.com --role=editor --user_pass=editor --path=$WP_PATH
 
 ./wp-cli-nightly.phar plugin install wordpress-importer --activate --path=$WP_PATH
-./wp-cli-nightly.phar import init/theme-unit-test-data.xml --authors=create --path=$WP_PATH > /dev/null 2>&1
+./wp-cli-nightly.phar import bin/theme-unit-test-data.xml --authors=create --path=$WP_PATH > /dev/null 2>&1
 
 if [ $WP_THEME ]; then
   ./wp-cli-nightly.phar theme install $WP_THEME --activate --path=$WP_PATH
