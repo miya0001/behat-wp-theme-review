@@ -1584,12 +1584,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vccw-team/wordpress-extension.git",
-                "reference": "f714b791c50405b0d2263827ff1edc8419f4b355"
+                "reference": "2f8001b492e80420f93f6bf71eaa5a7ca722b50b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/f714b791c50405b0d2263827ff1edc8419f4b355",
-                "reference": "f714b791c50405b0d2263827ff1edc8419f4b355",
+                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/2f8001b492e80420f93f6bf71eaa5a7ca722b50b",
+                "reference": "2f8001b492e80420f93f6bf71eaa5a7ca722b50b",
                 "shasum": ""
             },
             "require": {
@@ -1617,7 +1617,7 @@
                 }
             ],
             "description": "WordPress extension for the Behat",
-            "time": "2016-11-06 14:52:36"
+            "time": "2016-11-06 19:29:12"
         }
     ],
     "packages-dev": [],
