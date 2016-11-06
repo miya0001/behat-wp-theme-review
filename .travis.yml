@@ -10,6 +10,9 @@ env:
     - WP_THEME=https://downloads.wordpress.org/theme/twentyfifteen.1.6.zip
 
 before_install:
+  - nvm install node
+  - nvm alias default node
+  - node --version
   - npm install
   - npm run init
   - npm run wp-install
