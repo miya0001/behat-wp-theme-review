@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b16de9815f286642a84d837b9d2e540",
-    "content-hash": "cb072ad0f1476c8bc69949ea6306a9cf",
+    "hash": "09ab26773a1eb2d8c262a2fe7c943b49",
+    "content-hash": "82cb1554b7f476e67a58ab116be34fa2",
     "packages": [
         {
             "name": "behat/behat",
@@ -1580,16 +1580,16 @@
         },
         {
             "name": "vccw-team/wordpress-extension",
-            "version": "dev-master",
+            "version": "dev-stable",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vccw-team/wordpress-extension.git",
-                "reference": "2f8001b492e80420f93f6bf71eaa5a7ca722b50b"
+                "reference": "b1a48246dfe033d995b2a4e06507a9f8865616f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/2f8001b492e80420f93f6bf71eaa5a7ca722b50b",
-                "reference": "2f8001b492e80420f93f6bf71eaa5a7ca722b50b",
+                "url": "https://api.github.com/repos/vccw-team/wordpress-extension/zipball/b1a48246dfe033d995b2a4e06507a9f8865616f8",
+                "reference": "b1a48246dfe033d995b2a4e06507a9f8865616f8",
                 "shasum": ""
             },
             "require": {
@@ -1617,7 +1617,7 @@
                 }
             ],
             "description": "WordPress extension for the Behat",
-            "time": "2016-11-06 19:29:12"
+            "time": "2016-11-06 19:43:47"
         }
     ],
     "packages-dev": [],
