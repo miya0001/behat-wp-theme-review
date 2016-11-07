@@ -17,6 +17,7 @@ https://github.com/miya0001/behat-wp-theme-review/tree/master/features
 
 * Requires PHP 5.5 or later, so we need to check compatibility with lower version of the PHP.
 * We have to write more tests.
+* We have to upload screenshot when it is run on Travis CI.
 
 ## Getting Started
 
