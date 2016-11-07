@@ -23,7 +23,7 @@ Install WordPress into `/tmp/wordpress`.
 ```
 $ export WP_THEME=http://example.com/theme.zip
 $ export WP_VERSION=latest
-$ npm run wp-install
+$ npm run install-wp
 ```
 
 Startup WordPress via `wp server`.

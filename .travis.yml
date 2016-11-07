@@ -17,7 +17,7 @@ before_install:
   - node --version
   - npm install
   - npm run init
-  - npm run wp-install
+  - npm run install-wp
   - npm run wp >/dev/null 2>&1 &
 
 script:
