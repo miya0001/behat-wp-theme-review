@@ -4,7 +4,7 @@
 
 ## Features
 
-* Takes a screenshot of each pages.
+* Takes a screenshot automatically.
 * Runs tests with multiple screen sizes 1440x900 and 320x400.
 * It can login WordPress admin.
 * You can run those tests on the Travis CI. See [example](https://travis-ci.org/miya0001/behat-wp-theme-review).
@@ -29,7 +29,7 @@ Install WordPress into `/tmp/wordpress`.
 
 ```
 $ export WP_THEME=http://example.com/theme.zip
-$ export WP_VERSION=latest
+$ export DB_PASS="" # MySQL root password
 $ npm run install-wp
 ```
 
