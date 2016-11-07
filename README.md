@@ -40,7 +40,7 @@ Then you can access [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
 * WP_VERSION - WordPress version. See `wp help core download`.
 * WP_PATH - Path to the Document Root. Default is `/tmp/wp-behat-tests`.
 * WP_PORT - The port number to bind the server to. Default is `8080`.
-$ DB_PASS - MySQL root password. Default is empty.
+* DB_PASS - MySQL root password. Default is empty.
 
 ## Run Tests
 
