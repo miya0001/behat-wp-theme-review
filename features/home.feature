@@ -13,14 +13,3 @@ Feature: Showing the "Template: Sticky"
     When the screen size is 320x400
     Then I should see "Template: Sticky" in the ".post:first-child .entry-title" element
     And take a screenshot and save it to "screenshots/template-sticky-02.png"
-
-  Scenario: Showing the "Template: Sticky" at the single page
-    Given I am on "/?name=template-sticky"
-
-    When the screen size is 1440x900
-    Then I should see "Template: Sticky" in the ".entry-title" element
-    And take a screenshot and save it to "screenshots/template-sticky-03.png"
-
-    When the screen size is 320x400
-    Then I should see "Template: Sticky" in the ".entry-title" element
-    And take a screenshot and save it to "screenshots/template-sticky-04.png"
