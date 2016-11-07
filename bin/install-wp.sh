@@ -4,32 +4,46 @@ set -ex;
 
 DB_USER=root
 DB_NAME=wp-behat-tests
-WP_PORT=8080
-WP_PATH=/tmp/wordpress
+
 WP_TITLE='Welcome to the WordPress'
 WP_DESC='Hello World!'
+
+if [ ! $WP_PATH ]; then
+  WP_PATH=/tmp/wp-behat-tests
+fi
 
 if [ -e $WP_PATH ]; then
   rm -fr $WP_PATH
 fi
 
-mysql -e "drop database IF EXISTS \`$DB_NAME\`;" -uroot
-mysql -e "create database IF NOT EXISTS \`$DB_NAME\`;" -uroot
-
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
-chmod 755 ./wp-cli-nightly.phar
+if [ ! $DB_PASS ]; then
+  DB_PASS=""
+  mysql -e "drop database IF EXISTS \`$DB_NAME\`;" -uroot
+  mysql -e "create database IF NOT EXISTS \`$DB_NAME\`;" -uroot
+else
+  mysql -e "drop database IF EXISTS \`$DB_NAME\`;" -uroot -p"$DB_PASS"
+  mysql -e "create database IF NOT EXISTS \`$DB_NAME\`;" -uroot -p"$DB_PASS"
+fi
 
 if [ ! $WP_VERSION ]; then
   WP_VERSION=latest
 fi
+
+if [ ! $WP_PORT ]; then
+  WP_PORT=8080
+fi
+
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
+chmod 755 ./wp-cli-nightly.phar
 
 ./wp-cli-nightly.phar core download --path=$WP_PATH --locale=en_US --version=$WP_VERSION --force
 
 ./wp-cli-nightly.phar core config \
 --path=$WP_PATH \
 --dbhost=localhost \
---dbname=$DB_NAME \
---dbuser=$DB_USER \
+--dbname="$DB_NAME" \
+--dbuser="$DB_USER" \
+--dbpass="$DB_PASS" \
 --dbprefix=wp_ \
 --locale=en_US \
 --extra-php <<PHP
