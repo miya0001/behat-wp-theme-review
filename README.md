@@ -2,6 +2,13 @@
 
 [![Build Status](https://travis-ci.org/miya0001/behat-wp-theme-review.svg?branch=master)](https://travis-ci.org/miya0001/behat-wp-theme-review)
 
+## Features
+
+* Takes a screenshot of each pages.
+* Runs tests with multiple screen sizes 1440x900 and 320x400.
+* It can login WordPress admin.
+* You can run those tests on the Travis CI. See [example](https://travis-ci.org/miya0001/behat-wp-theme-review).
+
 ## Getting Started
 
 Clone this repository.
