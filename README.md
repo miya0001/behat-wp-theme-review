@@ -9,6 +9,10 @@
 * It can login WordPress admin.
 * You can run those tests on the Travis CI. See [example](https://travis-ci.org/miya0001/behat-wp-theme-review).
 
+See all tests.
+
+https://github.com/miya0001/behat-wp-theme-review/tree/master/features
+
 ## Known Issue
 
 * Requires PHP 5.5 or later, so we need to check compatibility with lower version of the PHP.
